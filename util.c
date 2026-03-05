@@ -64,7 +64,7 @@ void search_for_contact(contact *contact_list, char* name, int contact_count){
 		}
 	}
 	if (name_comparison != 0){
-		printf("No contact found with the name %s." 
+		printf("\nNo contact found with the name %s. " 
 			   "Please check spelling/ capitalization and try again.\n", name);
 	}
 }

@@ -97,6 +97,7 @@ void load_contacts(contact **contact_list, int* max_contacts, int *contact_index
                 (*contact_list)[*contact_index].number);
 
         if (read_info < 3) {
+            fclose(fp);
             return;
         }
         *contact_index += 1;

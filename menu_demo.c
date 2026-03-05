@@ -49,6 +49,7 @@ int main (void) {
 
 				printf("Enter contact name: ");
 				scanf(" %s", add_name);
+				//printf(add_name);
 				clear_input_buffer();
 
 				printf("Enter contact number: ");
@@ -117,6 +118,7 @@ int main (void) {
 			case 7:
 				save_contacts(contacts, max_contacts);
 				printf("Goodbye!\n");
+				free(contacts);
 				return 0;
 				break;
 
@@ -126,7 +128,6 @@ int main (void) {
 	}
 
 	free(contacts);
-	contacts = NULL;
 	return 0;
 	//exit();
 }
